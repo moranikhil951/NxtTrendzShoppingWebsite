@@ -1,11 +1,5 @@
-In this project, let's build a **Nxt Trendz - Cart Features** 
-
-
-
+In this project, I build a **Nxt Trendz Shopping Website** 
 ### Set Up Instructions
-
-<details>
-<summary>Click to view</summary>
 
 - Download dependencies by running `npm install`
 - Start up the app using `npm start`
@@ -16,7 +10,6 @@ In this project, let's build a **Nxt Trendz - Cart Features**
 1. 
 Exclusive Prime deals are for Prime Users.
 All Products are for both Prime and Non-Prime users.
-
 
 2. API Call Possible Views
 2.1 Success View
@@ -31,7 +24,6 @@ Not specifying Authorization header
 Using the wrong HTTP method
 2.3Loading View
 When the Prime or Non-prime User is logged in and accessed Prime Deals Section, we should show the Loading view until data is in progress.
-
 
 3. 
 3.1 File: src/components/AllProductsSection/index.js
@@ -52,9 +44,6 @@ When the Prime or Non-prime User is logged in and accessed Prime Deals Section, 
     File: src/components/similarProductItem/index.js
     File: src/components/ProductsHeader/index.js
     File: src/components/ProtectedRoute/index.js
-
-
-
 4. 
 
 4.1 State Variable-isLoading
@@ -62,7 +51,6 @@ isLoading is used to handle Success View, Loading View only.
 
 4.2 State Variable-apiStatus
 apiStatus is used to handle Success, Failure and Loading Views.
-
 
 5. React Icons
 react-icons is a third-party package contains bundle of icons like bootstrap, font awesome, material icons etc..,
@@ -101,11 +89,6 @@ Updated context value can only be accessed by the consumers nested within the pr
 syntax : <ContextObject.Provider value={/* some value */}>
    ...
 <ContextObject.Provider/>
-
-
-
-
-
 
 <details>
 <summary>Functionality to be added</summary>
@@ -225,7 +208,7 @@ Use these files to complete the implementation:
 
   ```text
    Username: henry
-password: henry_the_developer
+   password: henry_the_developer
   ```
 
 </details>
