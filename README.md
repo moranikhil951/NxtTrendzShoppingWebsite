@@ -1,4 +1,4 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+In this project, let's build a **Nxt Trendz - Cart Features** 
 
 ### Refer to the video below:
 
@@ -30,6 +30,100 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 </details>
 
 ### Completion Instructions
+
+1. 
+Exclusive Prime deals are for Prime Users.
+All Products are for both Prime and Non-Prime users.
+
+
+2. API Call Possible Views
+2.1 Success View
+When the Prime User is logged in and accessed Prime Deals Section then we should show the Exclusive Prime Deals section.
+
+2.2 Failure View
+When the Non-prime User is logged in and accessed Prime Deals Section then we should show the Get Exclusive Deals section.
+
+Reasons for API Call Failure :
+Sending UnAuthorized User credentials
+Not specifying Authorization header
+Using the wrong HTTP method
+2.3Loading View
+When the Prime or Non-prime User is logged in and accessed Prime Deals Section, we should show the Loading view until data is in progress.
+
+
+3. 
+3.1 File: src/components/AllProductsSection/index.js
+    File: src/components/Cart/index.js
+    File: src/components/Header/index.js
+    File: src/components/Home/index.js
+    File: src/components/LoginForm/index.js
+    File: src/components/NotFound/index.js
+    File: src/components/PrimeDealsSection/index.js
+    File: src/components/ProductCard/index.js
+    File: src/components/Products/index.js
+    File: src/components/ProductItemDetails/index.js
+    File: src/components/CartItem/index.js
+    File: src/components/CartListView/index.js
+    File: src/components/CartSummary/index.js
+    File: src/components/EmptyCartView/index.js
+    File: src/components/FilterGroup/index.js
+    File: src/components/similarProductItem/index.js
+    File: src/components/ProductsHeader/index.js
+    File: src/components/ProtectedRoute/index.js
+
+
+
+4. 
+
+4.1 State Variable-isLoading
+isLoading is used to handle Success View, Loading View only. 
+
+4.2 State Variable-apiStatus
+apiStatus is used to handle Success, Failure and Loading Views.
+
+
+5. React Icons
+react-icons is a third-party package contains bundle of icons like bootstrap, font awesome, material icons etc..,
+ 
+ ####to install react icons - npm install react-icons###
+
+ Importing React Icons
+The First letters of the icon indicates the category of the Icon.
+
+Each category of Icons have import statements separately, go to the category and copy the import statement.
+
+6. React Context
+Context is a mechanism that provides different Components and allows us to pass data without doing prop drilling.
+
+6.1 Creating Context
+      ===React.createContext(INITIAL_VALUE)===
+
+6.2 Context Properties
+    The Context object provides two properties.
+
+     6.2.1  Consumer
+     6.2.2  Provider
+
+ 6.3 How to Access the Value?
+We can access the value in the Context using Consumer Component provided by the Context Object.
+
+6.4 Consumer Component
+Syntax: <ContextObject.Consumer>
+  {/*callback function*/}
+</ContextObject.Consumer>
+
+6.5 Provider
+Provider Component updates the value of Context.
+When the provider updates context, all the nested consumers of that provider will be re-rendered.
+Updated context value can only be accessed by the consumers nested within the provider.
+syntax : <ContextObject.Provider value={/* some value */}>
+   ...
+<ContextObject.Provider/>
+
+
+
+
+
 
 <details>
 <summary>Functionality to be added</summary>
@@ -148,8 +242,8 @@ Use these files to complete the implementation:
 - Non-Prime User credentials
 
   ```text
-   username: raja
-   password: raja@2021
+   Username: henry
+password: henry_the_developer
   ```
 
 </details>
@@ -173,11 +267,23 @@ Use these files to complete the implementation:
 
 - Roboto
 
-</details>
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+==>  Overview  <==
+This is the frontend of a fully responsive e-commerce website built with modern web technologies. The project focuses on providing a seamless user experience for browsing and purchasing products. It includes features like product listings, shopping cart, and a user-friendly interface.
+
+==>  Features  <==
+Product Display: Browse through a variety of products with detailed information such as images, prices, and descriptions.
+Search Functionality: Users can search for products by name or category.
+Shopping Cart: Add items to the cart, view the total price, and adjust quantities.
+Responsive Design: The site is optimized for various screen sizes, providing a smooth experience on both mobile and desktop devices.
+
+ ==> Technologies Used <==
+HTML5: For structuring the web pages.
+CSS3: For styling, including Flex box and CSS Grid for layout.
+JavaScript (ES6+): For dynamic interactions and logic.
+React.js: A JavaScript library for building the user interface.
+React Router: For handling page navigation.
+Axios or Fetch API: For HTTP requests to any backend API.
+Bootstrap or Tailwind CSS: For responsive and modern design (if used).
+
+
